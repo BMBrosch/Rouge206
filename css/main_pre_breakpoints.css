@@ -9,19 +9,18 @@ html {
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	font-size: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container {
   max-width: 1200px;
-  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  width: 90%;
 }
 
 h1,
@@ -100,7 +99,8 @@ header nav ul li a{
 	display: flex;
 	justify-content: flex-start center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-wrap: wrap;
+	flex-flow: column;
 	text-align: center;
 
 }
@@ -196,34 +196,4 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
-}
-
-/*Tablet CSS*/
-@media all and (min-width:768px) {
-    /* Tablet styles here */
- .bottom-section {
-     flex-wrap: nowrap;
- }
-
- .section-one, .section-two, .section-three {
-     flex-basis: 30%;
-     padding-left: 1em;
-     padding-right: 1em;
- }
-
- .section-two {
-     border-left: 1px solid #eee;
-     border-right: 1px solid #eee;
-     border-bottom: none;
- }
-}
- 
-/*Desktop CSS*/
-@media all and (min-width:1200px) {
-    /* Desktop styles here */
-    header nav ul {
-        display: flex;
-        justify-content: space-between;
-      }
- 
 }
